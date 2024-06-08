@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+            color: brown;
+            background-color: rgb(152, 176, 176);
+            }
+        div p{
+            
+        }
+        div{
+            color: red;
+        }
+        .important{
+            color: aqua;
+        }
+        #conclusion{
+            background-color: bisque;
+            color: blue;
+        }
+        *{
+            padding: 100;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="important">
+        Yes this is an important heading
+    </h3>
+    <p class="important">This is an important paragraph and all elements of important class are coloures in aqua colour</p>
+    <div>
+        This is not a paragraph
+        <p>This is a paragraph inside a div</p>
+    </div>
+    <div class = "important"> 
+        This is a div of important class
+        <p>This is a paragraph inside a div of important class. But this is coloures according to the property "div > p". And not the property of important class</p>
+        <span>
+            <p> This is a para inside a span which is inside a div. Hence child prperty (div > p) not used. Instead Desecendant selector(div p) is used</p>
+        </span>
+    </div>
+    <div id="conclusion",  class="important">
+        This is a div with id=conclusion. So its not following div's style but following its own id's style.
+        Also this div has class="important", but id's style has been given priority.
+    </div>
+</body>
+</html>
